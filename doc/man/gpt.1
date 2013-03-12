@@ -1,0 +1,93 @@
+.\"/***************************************************************************
+.\" *   Copyright (C) 2003-2006 by Thiago Silva                               *
+.\" *   thiago.silva@kdemail.net                                              *
+.\" *                                                                         *
+.\" *   This program is free software; you can redistribute it and/or modify  *
+.\" *   it under the terms of the GNU General Public License as published by  *
+.\" *   the Free Software Foundation; either version 2 of the License, or     *
+.\" *   (at your option) any later version.                                   *
+.\" *                                                                         *
+.\" *   This program is distributed in the hope that it will be useful,       *
+.\" *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+.\" *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+.\" *   GNU General Public License for more details.                          *
+.\" *                                                                         *
+.\" *   You should have received a copy of the GNU General Public License     *
+.\" *   along with this program; if not, write to the                         *
+.\" *   Free Software Foundation, Inc.,                                       *
+.\" *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+.\" ***************************************************************************/
+.\"
+.TH GPT 1
+.SH NAME
+gpt \- compiler, interpreter and translator for the G-Portugol programming language
+
+.SH SYNOPSIS
+  gpt
+[
+.BR \-vhid
+] [
+.BI \-ots
+output_file
+] file1 file2 ...
+
+.SH DESCRIPTION
+.I gpt
+is a simple compiler for the G-Porutol Language. It is possible to have
+a list of files to be included in the compilation setting the GPT_INCLUDE
+environment variable, wich should have a list of file paths separated with ":".
+.SH OPTIONS
+.TP
+.BI \-v
+Shows version information and exits.
+.br
+.ns
+.TP
+.BI \-h
+Shows a summary of options and exits.
+.br
+.ns
+.TP
+.TP
+.BI \-i
+Execute
+.I interpreting
+the source code.
+.br
+.ns
+.TP
+.BI \-d
+Shows tips in the error report.
+.br
+.ns
+.TP
+.BI \-o " output_file"
+Compile the source code and save the resulting binary with the name
+.I output_file.
+.br
+.ns
+.TP
+.BI \-t " output_file"
+Translates the source code to the C programming language and saves the
+resulting file as
+.I output_file.
+.br
+.ns
+.TP
+.BI \-s " output_file"
+Compiles the source code to assembly source. Saves the resulting code as
+.I output_file.
+.br
+.ns
+.SH SEE ALSO
+.BR nasm (1)
+
+.SH ADDITIONAL INFORMATION
+
+For further information, visit the website:
+.br
+.BI http://gpt.berlios.de
+
+.SH AUTHOR
+Thiago Silva <tsilva@sourcecraft.info>
+
